@@ -6,7 +6,7 @@
     <title>@ViewData["Title"] - ER</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
-    <style type="text/css">.fill {
+    @*<style type="text/css">.fill {
             background-color: burlywood;
             margin: 10px;
             top: 0px;
@@ -14,7 +14,7 @@
             left: 0px;
             bottom: 0px;
         }
-    </style>
+    </style>*@
 </head>
 <body>
     <header>
@@ -37,16 +37,19 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Meistari">Specialists</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Employees/Index">Specialists</a>
                         </li>
+                        @*<li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Consultation">Consultations</a>
+                        </li>*@
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container-fluid fill">
-        <main role="main" class="pb-3 fill">
+    <div class="container-fluid @*fill*@">
+        <main role="main" class="pb-3 @*fill*@">
             @RenderBody()
         </main>
     </div>

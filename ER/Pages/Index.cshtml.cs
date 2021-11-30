@@ -22,8 +22,7 @@ namespace ER.Pages
         {
 
         }
-        public Master Master { get; set; }
-
+        
         public List<string> Pakalpojumi = new List<string>()
         {
             "Hair",

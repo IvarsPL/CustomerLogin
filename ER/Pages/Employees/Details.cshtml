@@ -1,0 +1,75 @@
+﻿@page "{id:int}"
+@model ER.Pages.Employees.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+<style type="text/css">
+    .custom-box 
+    {
+        display: block;
+        width: 50%;
+        overflow: hidden;
+        resize: both;
+        min-height: 100px;
+    }
+</style>
+
+<h1>Details</h1>
+
+<div>
+    <h4>Specialists</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Specialists.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Specialists.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Specialists.Bio)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Specialists.Bio)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Specialists.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Specialists.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Specialists.Profession)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Specialists.Profession)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Specialists.Image)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Specialists.Image)
+        </dd>
+    </dl>
+</div>
+<form method="post" >
+    <fieldset>
+        <legend>Send your question</legend>
+        <div>
+            <label for="">Submit your question here:</label>
+            <br/>
+            <input type="text" name="" value="" class="custom-box" />
+        </div>
+        <div>
+            @*<label>&nbsp;</label>*@
+            <br/>
+            <input type="submit" value="Submit" class="submit" />
+        </div>
+    </fieldset>
+</form>
+
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Specialists.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
