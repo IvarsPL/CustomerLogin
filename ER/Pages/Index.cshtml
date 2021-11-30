@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style type="text/css">.card-imgs {
+                           height: 330px;
+                           max-width: 100%;
+                           vertical-align: bottom;
+                           background-position: center; /* Center the image */
+                           background-repeat: no-repeat; /* Do not repeat the image */
+                           background-size: cover; /* Resize the background image to cover the entire container */
+                       }</style>
+<body class="">
+<div class="text-center">
+    <h1 class="display-4">ER Beauty consulting service</h1>
+</div>
+<div class="card-columns">
+    @foreach (var meistars in Model.Pakalpojumi)
+    {
+    <div class="card">
+        <div class="card-imgs" style="background-image: url('https://github.com/IvarsPL/CustomerLogin/blob/master/eva%20roehlinger%20gaiss%20uz%20tumsa.jpg?raw=true')"></div>
+        <div class="card-title" style="text-align: center">@meistars</div>
+    </div>
+    }
+    
+</div>
+</body>
+
