@@ -1,23 +1,21 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+using System.IO;
 using System.Linq;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
-namespace ER.Models
+namespace ER.Pages
 {
-    public class Specialists
+    public class Master
     {
-        public int Id { get; set; }
-        [Display(Name = "Full Name")]
         public string Name { get; set; }
         public string Bio { get; set; }
         public string Email { get; set; }
-        public string Profession { get; set; }
-
         [JsonPropertyName("img")]
         public string Image { get; set; }
+
+        //public override string ToString() => JsonSerializer.Serialize<Master>(this);
     }
 }
