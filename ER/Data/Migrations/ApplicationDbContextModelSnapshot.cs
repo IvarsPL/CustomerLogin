@@ -126,7 +126,7 @@ namespace ER.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("NormalizedEmail"
+                    b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
 
                     b.HasIndex("NormalizedUserName")
