@@ -40,13 +40,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Employees/Index">Specialists</a>
                         </li>
-                        @*<li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Consultation">Consultations</a>
-                        </li>*@
+
 
                     </ul>
                     <partial name="_LoginPartial" />
+                    @await Component.InvokeAsync("CultureSwitcher")
+
                 </div>
+                
             </div>
         </nav>
     </header>

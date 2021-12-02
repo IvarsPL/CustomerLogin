@@ -1,9 +1,7 @@
-using System;
-using ER.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using System;
 
 namespace ER.Data.Migrations
 {

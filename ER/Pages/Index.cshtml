@@ -1,29 +1,44 @@
 ﻿@page
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IStringLocalizer<IndexModel> localizer
+@inject IHtmlLocalizer<IndexModel> htmlLocalizer
 @model IndexModel
 @{
     ViewData["Title"] = "Home page";
+    var requestCultureFeature = HttpContext.Features.Get<IRequestCultureFeature>();
+    var requestCulture = requestCultureFeature.RequestCulture;
 }
-<style type="text/css">.card-imgs {
-                           height: 330px;
-                           max-width: 100%;
-                           vertical-align: bottom;
-                           background-position: center; /* Center the image */
-                           background-repeat: no-repeat; /* Do not repeat the image */
-                           background-size: cover; /* Resize the background image to cover the entire container */
-                       }</style>
-<body class="">
-<div class="text-center">
-    <h1 class="display-4">ER Beauty consulting service</h1>
-</div>
-<div class="card-columns">
-    @foreach (var meistars in Model.Pakalpojumi)
-    {
-    <div class="card">
-        <div class="card-imgs" style="background-image: url('https://github.com/IvarsPL/CustomerLogin/blob/master/eva%20roehlinger%20gaiss%20uz%20tumsa.jpg?raw=true')"></div>
-        <div class="card-title" style="text-align: center">@meistars</div>
-    </div>
+<style type="text/css">
+    .card-imgs {
+        height: 330px;
+        max-width: 100%;
+        vertical-align: bottom;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
     }
-    
-</div>
+
+    .culture-table {
+    }
+</style>
+<body class="">
+    <div class="text-center">
+        <h1 class="display-4">@localizer["Welcome"]</h1>
+        <p>@htmlLocalizer["Learn"]</p>
+    </div>
+
+   
+
+    <div class="card-columns">
+        @foreach (var meistars in Model.Pakalpojumi)
+        {
+            <div class="card">
+                <div class="card-imgs" style="background-image: url('https://github.com/IvarsPL/CustomerLogin/blob/master/eva%20roehlinger%20gaiss%20uz%20tumsa.jpg?raw=true')"></div>
+                <div class="card-title" style="text-align: center">@meistars</div>
+            </div>
+        }
+
+    </div>
 </body>
 
