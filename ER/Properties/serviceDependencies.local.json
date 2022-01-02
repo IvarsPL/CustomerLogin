@@ -7,6 +7,14 @@
     "mssql2": {
       "type": "mssql.local",
       "connectionId": "ConnectionStrings:ERContext"
+    },
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql3": {
+      "type": "mssql.onprem",
+      "connectionId": "ConnectionStrings:IdentityDbContextConnection",
+      "secretStore": "LocalSecretsFile"
     }
   }
 }
