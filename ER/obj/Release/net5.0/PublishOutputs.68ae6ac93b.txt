@@ -37,6 +37,7 @@ C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\PubTmp\Out\wwwr
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\LICENSE.txt
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\PubTmp\Out\appsettings.Development.json
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\PubTmp\Out\appsettings.json
+C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\PubTmp\Out\global.json
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\PubTmp\Out\ER.dll
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\PubTmp\Out\ER.runtimeconfig.json
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\PubTmp\Out\ER.pdb

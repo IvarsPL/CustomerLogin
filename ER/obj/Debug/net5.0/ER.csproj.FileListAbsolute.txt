@@ -453,3 +453,4 @@ C:\Users\Better\source\repos\CustomerLogin\ER\obj\Debug\net5.0\Razor\Areas\Ident
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
 C:\Users\Better\source\repos\CustomerLogin\ER\bin\Debug\net5.0\global.json
+C:\Users\Better\source\repos\CustomerLogin\ER\obj\Debug\net5.0\en\ER.resources.cs

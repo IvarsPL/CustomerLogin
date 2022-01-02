@@ -452,3 +452,4 @@ C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\Razor\Areas\Ide
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Better\source\repos\CustomerLogin\ER\obj\Release\net5.0\Razor\Pages\Shared\Components\CultureSwitcher\default.cshtml.g.cs
+C:\Users\Better\source\repos\CustomerLogin\ER\bin\Release\net5.0\global.json
